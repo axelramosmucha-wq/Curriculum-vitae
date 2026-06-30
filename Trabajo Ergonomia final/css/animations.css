@@ -1,0 +1,433 @@
+/*====================================================
+        ANIMATIONS.CSS
+        JHON AXEL RAMOS MUCHA PORTFOLIO
+====================================================*/
+
+
+/*=============================
+        APARICIÓN GENERAL
+==============================*/
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:all .9s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+
+/*=============================
+            FADE LEFT
+==============================*/
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-70px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+/*=============================
+            FADE RIGHT
+==============================*/
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(70px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+
+/*=============================
+            ZOOM
+==============================*/
+
+.zoom{
+
+    opacity:0;
+
+    transform:scale(.85);
+
+    transition:all .8s ease;
+
+}
+
+.zoom.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+
+/*=============================
+        HERO FLOAT
+==============================*/
+
+@keyframes floating{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-12px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.hero-image img{
+
+    animation:floating 6s ease-in-out infinite;
+
+}
+
+
+/*=============================
+        BOTONES
+==============================*/
+
+.btn{
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.btn2{
+
+    transition:.35s;
+
+}
+
+.btn2:hover{
+
+    transform:translateY(-5px);
+
+}
+
+
+/*=============================
+        TARJETAS
+==============================*/
+
+.about-card,
+.project-card,
+.skill,
+.certificate-card,
+.testimonial-card,
+.tech-grid div{
+
+    transition:.35s;
+
+}
+
+.about-card:hover,
+.project-card:hover,
+.skill:hover,
+.certificate-card:hover,
+.testimonial-card:hover,
+.tech-grid div:hover{
+
+    transform:translateY(-10px);
+
+}
+
+
+/*=============================
+        ICONOS
+==============================*/
+
+.hero-icons a{
+
+    transition:.35s;
+
+}
+
+.hero-icons a:hover{
+
+    transform:translateY(-8px) scale(1.08);
+
+}
+
+
+/*=============================
+        NAVBAR
+==============================*/
+
+header{
+
+    transition:.4s;
+
+}
+
+header.scrolled{
+
+    box-shadow:0 10px 35px rgba(0,0,0,.08);
+
+}
+
+
+/*=============================
+        SCROLL INDICATOR
+==============================*/
+
+.scroll-indicator{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0;
+
+    height:4px;
+
+    background:#0071E3;
+
+    z-index:9999;
+
+}
+
+
+/*=============================
+        BOTÓN TOP
+==============================*/
+
+#btnTop{
+
+    transition:.35s;
+
+}
+
+#btnTop:hover{
+
+    transform:translateY(-8px);
+
+}
+
+
+/*=============================
+        IMÁGENES
+==============================*/
+
+.project-card img,
+
+.certificate-card img{
+
+    transition:.5s;
+
+}
+
+.project-card:hover img,
+
+.certificate-card:hover img{
+
+    transform:scale(1.05);
+
+}
+
+
+/*=============================
+        APARICIÓN ESCALONADA
+==============================*/
+
+.delay1{
+
+    transition-delay:.15s;
+
+}
+
+.delay2{
+
+    transition-delay:.3s;
+
+}
+
+.delay3{
+
+    transition-delay:.45s;
+
+}
+
+.delay4{
+
+    transition-delay:.6s;
+
+}
+
+.delay5{
+
+    transition-delay:.75s;
+
+}
+
+
+/*=============================
+        TITULOS
+==============================*/
+
+.section-title{
+
+    animation:fadeTitle 1s;
+
+}
+
+@keyframes fadeTitle{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(30px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+/*=============================
+        SPIN ICON
+==============================*/
+
+.tech-grid div:hover i{
+
+    animation:rotateIcon .6s;
+
+}
+
+@keyframes rotateIcon{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/*=============================
+        FADE
+==============================*/
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+.fade{
+
+    animation:fade .8s;
+
+}
+
+
+/*=============================
+        PULSE
+==============================*/
+
+@keyframes pulse{
+
+    0%{
+
+        transform:scale(1);
+
+    }
+
+    50%{
+
+        transform:scale(1.03);
+
+    }
+
+    100%{
+
+        transform:scale(1);
+
+    }
+
+}
+
+.hero h1{
+
+    animation:pulse 5s infinite;
+
+}
